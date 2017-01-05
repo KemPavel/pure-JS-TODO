@@ -1,4 +1,4 @@
-#Simple TODO app (React only)
+#Simple TODO app (Pure-JS)
 
   [**DEMO**](http://codepen.io/KemPavel/full/dOOJVZ/)
 
