@@ -1,5 +1,7 @@
 #Simple TODO app (Pure-JS)
 
+### Used Revealing modules and PubSub
+
   [**DEMO**](http://codepen.io/KemPavel/full/dOOJVZ/)
 
 - Clone repository
