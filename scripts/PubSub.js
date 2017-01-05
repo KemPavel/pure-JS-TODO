@@ -11,7 +11,7 @@ const pubsub = {
           this.events[eventName].splice(i, 1);
           break;
         }
-      };
+      }
     }
   },
   publish(eventName, data) {
