@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>TODO List</title>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Simple Todo app (Pure JS)</h1>
+      <h3>To-Do (<span id="active-todos">0</span>)</h3>
+    </header>
+    <section class="form">
+      <input id="todo-input" class="form__input" maxlength="50" placeholder="Add todo" />
+      <button id="add-button" class="form__button">╋</button>
+    </section>
+    <section>
+      <ul id="todos-list" class="todos-list">
+
+        <!-- Handlebars template start-->
+          <script id="template" type="text/x-handlebars-template">
+            <li id={{ this.id }} class="todo-item">
+              {{#if this.completed}}
+                <span class="todo-item__name todo-item__name--disabled">{{ this.text }}</span>
+              {{else}}
+                <span class="todo-item__name">{{ this.text }}</span>
+              {{/if}}
+              <span class="todo-item__delete-button">×</span>
+            </li>
+            {{/each}}
+          </script>
+        <!-- Handlebars template end-->
+
+      </ul>
+    </section>
+    <footer class="footer">
+      <button id="show-all" class="footer__button footer__button--active">All</button>
+      <button id="show-active" class="footer__button">Active</button>
+      <button id="show-completed" class="footer__button">Completed</button>
+      <button id="delete-completed" class="footer__button footer__button--delete-completed">Delete completed</button>
+    </footer>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
+  <script src="scripts/TodoApp.js"></script>
+
+</body>
+</html>
