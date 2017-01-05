@@ -7,4 +7,4 @@
 
 
 
-![GitHub Logo](https://github.com/Pavel-Kazakov/react-TODO/blob/master/thumbnail.png)
+![GitHub Logo](https://github.com/KemPavel/pure-JS-TODO/blob/master/thumbnail.png)
