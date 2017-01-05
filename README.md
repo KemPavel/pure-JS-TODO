@@ -1,6 +1,6 @@
 #Simple TODO app (Pure-JS)
 
-### Using Revealing modules and PubSub
+### Using Revealing modules, PubSub and Handlebars.js
 
   [**DEMO**](http://codepen.io/KemPavel/full/dOOJVZ/)
 
